@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+@theme {
+	--color-grey: #b8c6e54d;
+	--color-primary-light: #b8c6e5;
+	--color-primary-bg: #15171d;
+	--color-soft-grey: #6f6a8880;
+	--color-border: #4a4563;
+
+	--font-sans: 'DM Sans', 'sans-serif';
+}
+
+@font-face {
+	font-family: 'DM Sans';
+	src: local('DM Sans'), url('/src/fonts/DMSans.ttf');
+	font-weight: 300;
+	font-display: swap;
+}
