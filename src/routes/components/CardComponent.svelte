@@ -11,11 +11,10 @@
 	interface Props {
 		triggerOnScroll?: boolean;
 		lightCard?: string;
-		darkCard?: string;
 		defaultCard?: string;
 	}
 
-	let { triggerOnScroll = true, lightCard, darkCard, defaultCard }: Props = $props();
+	let { triggerOnScroll = true, lightCard, defaultCard }: Props = $props();
 
 	let container: HTMLDivElement | undefined = $state();
 
@@ -31,18 +30,15 @@
 	});
 </script>
 
-<div bind:this={container} class="group relative h-[550px] w-[750px]">
+<div
+	bind:this={container}
+	class="group xs:h-[300px] xs:w-[400px] relative xl:h-[550px] xl:w-[750px]"
+>
 	<div class="rounded-20 absolute z-0 h-full w-full">
 		<div
 			class={twMerge(
 				'bg-primary-light absolute top-0 left-0 z-10 h-full w-full rounded-4xl transition-all duration-500 ease-[cubic-bezier(0.64,0,0.78,0)] group-[.inView]:rotate-[-7deg]',
 				lightCard
-			)}
-		></div>
-		<div
-			class={twMerge(
-				'bg-primary-bg border-primary-light absolute right-0 bottom-0 z-0 h-full w-full rounded-4xl transition-all duration-500 ease-[cubic-bezier(0.64,0,0.78,0)] group-[.inView]:rotate-[7deg]',
-				darkCard
 			)}
 		></div>
 	</div>

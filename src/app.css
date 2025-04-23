@@ -8,6 +8,7 @@
 	--color-primary-bg: #15171d;
 	--color-soft-grey: #6f6a8880;
 	--color-border: #4a4563;
+	--breakpoint-xs: 25rem;
 
 	--font-sans: 'DM Sans', 'sans-serif';
 }
