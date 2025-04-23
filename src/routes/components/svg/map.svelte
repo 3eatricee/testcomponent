@@ -24,7 +24,6 @@
 		<g id="Group_2275" data-name="Group 2275">
 			<g data-name="Group 2274" transform="translate(-72 -467)">
 				<path
-					id="map-pin-box"
 					data-name="Union 1"
 					d="M39.1,31H52.9L46,39ZM5,31a5,5,0,0,1-5-5V5A5,5,0,0,1,5,0H87a5,5,0,0,1,5,5V26a5,5,0,0,1-5,5Z"
 					transform="translate(1115 7645)"
@@ -33,18 +32,15 @@
 					style="transform-box: fill-box;"
 				/>
 				<text
-					id="map-pin-text"
 					transform="translate(1132 7665)"
 					fill="#b8c6e5"
-					font-size="12"
-					font-family="IBM Plex Mono"
+					font-size="11"
 					transform-origin="bottom"
 					style="transform-box: fill-box;"
 					font-weight="500">NUREMBERG</text
 				>
 			</g>
 			<circle
-				id="Ellipse_17"
 				data-name="Ellipse 17"
 				cx="7.5"
 				cy="7.5"

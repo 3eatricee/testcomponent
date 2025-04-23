@@ -31,10 +31,6 @@
 				<p class=" font-mono text-[12px] font-semibold text-white uppercase">
 					trusted by 500+ customers
 				</p>
-
-				<div class="z-10 row-span-2 mx-auto w-full max-w-full">
-					<CardComponent />
-				</div>
 			</div>
 
 			<div class="bg-soft-grey mr-[50px] h-[0.5px] grow"></div>
@@ -44,35 +40,45 @@
 		</div>
 	</div>
 
-	<div>
-		<div class="mt-[20px] ml-[60px] pl-[10%] font-sans">
-			<div class="max-w-[400px] text-left">
-				<h3 class="text-primary-light mb-[30px] text-[40px] leading-[1.2]">
-					At Kalkyl, we’re perfectionists with a sense of humor that’s, well… debatable.
-				</h3>
-				<p class="mx-auto max-w-full text-[14px] font-light text-white">
-					But when it comes to software, we leave nothing to chance. We’re here to help you rethink
-					what’s possible, pushing boundaries when it makes sense – and cutting through the noise
-					when it doesn’t.
-				</p>
+	<div class="mt-[20px] mr-[60px] pl-[10%] font-sans">
+		<div class="grid grid-cols-1 items-start gap-[60px] lg:grid-cols-2">
+			<div class="flex flex-col gap-[40px]">
+				<div class="max-w-[400px] text-left">
+					<h3 class="text-primary-light mb-[30px] text-[40px] leading-[1.2]">
+						At Kalkyl, we’re perfectionists with a sense of humor that’s, well… debatable.
+					</h3>
+					<p class="text-[14px] font-light text-white">
+						But when it comes to software, we leave nothing to chance. We’re here to help you
+						rethink what’s possible, pushing boundaries when it makes sense – and cutting through
+						the noise when it doesn’t.
+					</p>
+				</div>
+
+				<div class="flex pt-20">
+					<div class="grid grid-cols-2 gap-[30px]">
+						{#each Array(4) as _, i}
+							<div
+								class="border-border text-primary-light flex h-[80px] w-[220px] items-center justify-center rounded-sm border-1 font-mono text-[12px] uppercase"
+							>
+								Placeholder
+							</div>
+						{/each}
+					</div>
+				</div>
 			</div>
 
-			<div class="mt-30 flex">
-				<div class="grid grid-cols-2 gap-[30px]">
-					{#each Array(4) as _, i}
-						<div
-							class="border-border text-primary-light flex h-[80px] w-[220px] items-center justify-center rounded-sm border-1 font-mono uppercase"
-						>
-							Placeholder
-						</div>
-					{/each}
-				</div>
+			<div class="w-full pt-[50px] -ml-[10%]">
+				<CardComponent
+					lightCard="md:group-[.inView]:left-[-30px] group-[.inView]:rotate-[-5deg]"
+					darkCard="md:group-[.inView]:right-[-30px] group-[.inView]:rotate-[5deg]"
+					defaultCard="w-full h-full overflow-hidden"
+				/>
 			</div>
 		</div>
 	</div>
 
 	<div
-		class="px-page-border relative z-10 mt-50 flex flex-col items-center justify-center gap-[20px]"
+		class="px-page-border relative z-10 mt-70 flex flex-col items-center justify-center gap-[20px]"
 	>
 		<p class="text-14 mx-auto max-w-[385px] text-center font-sans font-light text-white">
 			Our straightforward, calculated approach ensures your digital solution is exactly what it
@@ -91,7 +97,7 @@
 		</div>
 	</div>
 
-	<div class="absolute right-[-10%] bottom-0 z-0 w-[70%] translate-y-[30%]">
+	<div class="absolute right-[-10%] bottom-0 z-0 w-[70%] translate-y-[20%]">
 		<Map />
 	</div>
 </div>
