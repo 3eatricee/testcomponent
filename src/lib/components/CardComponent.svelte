@@ -32,7 +32,7 @@
 
 <div
 	bind:this={container}
-	class="group xs:h-[300px] xs:w-[400px] relative xl:h-[550px] xl:w-[750px]"
+	class="group xs:h-[300px] xs:w-[400px] relative lg:h-[550px] lg:w-[750px]"
 >
 	<div class="rounded-20 absolute z-0 h-full w-full">
 		<div
@@ -43,9 +43,6 @@
 		></div>
 	</div>
 	<div
-		class={twMerge(
-			'bg-primary-bg shadow-offBlack/50 border-primary-muted/20 relative z-10 rounded-4xl border-[0.5px] shadow-xl',
-			defaultCard
-		)}
+		class={twMerge('bg-primary-bg relative z-10 rounded-4xl border-[0.5px] shadow-xl', defaultCard)}
 	></div>
 </div>
