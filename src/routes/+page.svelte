@@ -38,7 +38,7 @@
 	</div>
 
 	<div
-		class="xs:mr-[27px] xs:ml-[27px] mt-[20px] flex justify-center font-sans lg:mr-[60px] lg:ml-[60px] lg:justify-start lg:pr-[10%] lg:pl-[10%]"
+		class="xs:mr-[27px] xs:ml-[27px] mt-[20px] flex justify-center font-sans lg:mr-[60px] lg:ml-[60px] lg:justify-start lg:pr-[0%] lg:pl-[0%] xl:pr-[10%] xl:pl-[10%]"
 	>
 		<div class="grid grid-cols-1 items-start gap-[60px] lg:grid-cols-2">
 			<div class="flex flex-col gap-[40px]">
