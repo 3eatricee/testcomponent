@@ -2,38 +2,32 @@
 	import CardComponent from '../lib/components/CardComponent.svelte';
 	import SquareComponent from '../lib/components/SquareComponent.svelte';
 	import Map from '../lib/components/svg/map.svelte';
-	import Star from '../lib/components/svg/star.svelte';
 </script>
 
-<div class="bg-primary-bg relative flex h-screen w-screen flex-col overflow-x-hidden pt-[10px]">
+<div class="relative flex h-screen w-screen flex-col overflow-x-hidden pt-[10px]">
 	<div class="w-full">
-		<div class="r flex items-center justify-center">
+		<div class="flex items-center justify-center">
 			<div class="absolute left-5 xl:left-10">
 				<SquareComponent />
 			</div>
+			<div
+				class="bg-soft-grey absolute bottom-0 left-[31px] h-full w-[0.5px] translate-x-[-50%] xl:left-[51px]"
+			></div>
 
-			<div class="bg-soft-grey ml-[30px] h-[0.5px] grow lg:max-w-[10%] xl:ml-[50px]"></div>
+			<div class="bg-soft-grey ml-[31px] h-[0.5px] grow lg:max-w-[10%] xl:ml-[51px]"></div>
 			<div
 				class="bg-primary-light mx-4 w-fit rounded-[5px] border-[0.5px] px-[10px] py-[4px] font-mono text-[12px] leading-none font-medium uppercase"
 			>
 				who we are
 			</div>
-			<!-- <div class="bg-soft-grey h-[0.5px] w-[600px]"></div>
+			<div class="bg-soft-grey h-[0.5px] grow"></div>
 
-			<div class="mx-4 flex flex-col items-start gap-[4px]">
-				<div class="flex items-center gap-[4px]">
-					{#each Array(5) as _, i}
-						<Star />
-					{/each}
-				</div>
-				<p class=" font-mono text-[12px] font-semibold text-white uppercase">
-					trusted by 500+ customers
-				</p>
-			</div> -->
-			<div class="bg-soft-grey mr-[30px] h-[0.5px] grow xl:mr-[50px]"></div>
 			<div class="absolute right-5 xl:right-10">
 				<SquareComponent />
 			</div>
+			<div
+				class="bg-soft-grey absolute right-[31px] bottom-0 h-full w-[0.5px] translate-x-[-50%] xl:right-[51px]"
+			></div>
 		</div>
 	</div>
 
@@ -87,9 +81,11 @@
 
 		<div class="grid w-full gap-[30px] lg:grid-cols-[1fr_auto_1fr]">
 			<div class=" relative hidden items-center lg:flex">
-				<div class="absolute left-10"><SquareComponent /></div>
-				<div class="bg-soft-grey mr-[50px] ml-[50px] h-[0.5px] grow"></div>
-				<div class="absolute right-10"><SquareComponent /></div>
+				<div class="absolute left-5 xl:left-10"><SquareComponent /></div>
+				<div
+					class="bg-soft-grey mr-[31px] ml-[30px] h-[0.5px] grow xl:mr-[50px] xl:ml-[51px]"
+				></div>
+				<div class="absolute right-5 xl:right-10"><SquareComponent /></div>
 			</div>
 			<h4 class="text-primary-light xs:text-[26px] text-center font-sans xl:text-[40px]">
 				smart, efficient, and built for success.
